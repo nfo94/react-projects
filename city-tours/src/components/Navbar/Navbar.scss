@@ -1,0 +1,24 @@
+@import "../../App.scss";
+
+.navbar {
+  background-color: $mainBlack;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  li {
+    display: inline;
+    padding-left: 0.8rem;
+    cursor: pointer;
+  }
+
+  a {
+    color: $mainWhite;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .active{
+    color: $mainGreen;
+  }
+}

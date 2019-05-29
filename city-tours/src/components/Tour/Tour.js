@@ -1,0 +1,39 @@
+import React, { Component } from "react";
+import "./Tour.scss";
+
+export default class Tour extends Component {
+  state = {
+    showInfo: false
+  };
+
+  handleInfo = () => {
+    this.setState({
+      showInfo: !this.state.showInfo
+    });
+  };
+
+  render() {
+    const { city, img, name, info } = this.props.tour;
+
+    return (
+      <article className="article">
+        <div className="tour-container__card">
+          <img alt="cities" src={img} />
+          <span className="close-btn">
+            <i className="fas fa-window-close" />
+          </span>
+          <div className="tour-container__card-info">
+            <h3>{city}</h3>
+            <h4>{name}</h4>
+            <h5>
+              <span onClick={this.handleInfo}>
+                <i className="fas fa-caret-square-down" />
+              </span>
+            </h5>
+            {this.state.showInfo && <p>{info}</p>}
+          </div>
+        </div>
+      </article>
+    );
+  }
+}

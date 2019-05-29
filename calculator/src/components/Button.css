@@ -1,0 +1,35 @@
+:root{
+  --bg-button: rgba(236, 240, 241,1.0);
+  --border-btn: dotted 1px rgba(189, 195, 199,1.0);
+}
+
+.button{
+  font-size: 1.4rem;
+  background-color: var(--bg-button);
+  border: var(--border-btn);
+  outline: none;
+  cursor: pointer;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+}
+
+.button:active{
+  background-color: rgba(178, 190, 195,0.4);
+}
+
+.button.double{
+  grid-column: span 2;
+}
+
+.button.triple{
+  grid-column: span 3;
+}
+
+.button.operation{
+  background-color: rgba(232, 67, 147,1.0);
+  color: rgba(236, 240, 241,1.0);
+}
+
+.button.button.operation:active{
+  background-color: rgba(235, 77, 75,1.0);
+}
