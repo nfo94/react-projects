@@ -1,0 +1,17 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Pangolin', cursive;
+  color: #2c3e50;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+h1{
+  padding-top: 20px;
+}

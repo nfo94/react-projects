@@ -1,0 +1,11 @@
+.card-container{
+  display: flex;
+  flex-direction: column;
+  background-color: #ecf0f1;
+  border: 2px solid #bdc3c7;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  margin: 10px;
+  max-width: 180px;
+}
