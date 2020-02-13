@@ -8,7 +8,7 @@ export default class ToDoList extends Component {
     return (
       <React.Fragment>
         <ul className="list-group mt-5" />
-        <h3 className="text-capitalize text-center">Todo list</h3>
+        <h3 className="text-capitalize text-center">List</h3>
         {items.map(item => {
           return (
             <ToDoItem
